@@ -1,0 +1,151 @@
+/* ===============================
+   CSS RESET + THEME
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+    --primary-color: #2563eb;
+    --text-color: #1f2933;
+    --bg-color: #f9fafb;
+    --card-bg: #ffffff;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+/* ===============================
+   HEADER & NAVIGATION
+================================ */
+
+header {
+    background-color: var(--card-bg);
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* ===============================
+   PROFILE IMAGE
+================================ */
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+    border: 4px solid var(--primary-color);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   TYPOGRAPHY
+================================ */
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   PROJECTS / SKILLS BOX
+================================ */
+
+article,
+.skill-box {
+    background-color: var(--card-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.skill-box ul {
+    padding-left: 20px;
+}
+
+.skill-box li {
+    margin-bottom: 8px;
+}
