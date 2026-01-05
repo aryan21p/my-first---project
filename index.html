@@ -1,124 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe | Aryan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <title>Personal Portfolio | Aryan Pathak</title>
-
-
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
 
+  <h1 class="title">Tic Tac Toe</h1>
 
+  <!-- SVG Decoration -->
+  <div class="svg-decor">
+    <svg width="80" height="80" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" stroke="#6366f1" stroke-width="6" fill="none" />
+      <line x1="30" y1="30" x2="70" y2="70" stroke="#ef4444" stroke-width="6"/>
+      <line x1="70" y1="30" x2="30" y2="70" stroke="#ef4444" stroke-width="6"/>
+    </svg>
+  </div>
 
-<header>
-    <div class="container">
-        <nav>
-            <h2>ARYAN PATHAK</h2>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+  <div class="game">
+    <div class="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
     </div>
-</header>
 
+    <p id="status"></p>
+    <button id="restart">Restart Game</button>
+  </div>
 
-<main class="container">
-    <section>
-        <img src="D:\New folder (2)\aryan.jpg" alt="My Photo" class="profile-img">
-
-        <h1>Hello, I’m Aryan Pathak </h1>
-        <p>I am learning HTML & CSS and building my portfolio and  a passionate computer science student who is learning
-                web development and data structures. I enjoy building logical solutions and
-                improving my technical skills step by step.
-</p>
-
-        <a href="about.html" class="btn">Know More</a>
-    </section>
-</main>
-
-
-
-<section class="container">
-    <h2>My Skills</h2>
-
-    <article>
-        <h3>HTML</h3>
-        <p>Basic structure, forms and semantics.</p>
-    </article>
-
-    <article>
-        <h3>CSS</h3>
-        <p>Styling, layouts, colors and Flexbox.</p>
-    </article>
-
-    <article>
-        <h3>Java</h3>
-        <p>Problem Solving.</p>
-    </article>
-</section>
-
-
-
-
-
-
-
-
-
-    
-    
-
-    <!-- Main Content -->
-    <main>
-
-       
-
-
-       
-
-        <!-- Projects Section -->
-        <section>
-            <h2>Projects</h2>
-
-            <article>
-                <h3>Student Management System</h3>
-                <p>A console-based Java application to manage student records.</p>
-            </article>
-
-           
-        </section>
-
-        <!-- Embedded Video -->
-        <section>
-            <h2>Learning Inspiration</h2>
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/HcOc7P5BMi4"
-                title="HTML Tutorial by Shradha Khapra"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
-        </section>
-
-        <!-- Quote Section -->
-        <section>
-            <h2>Quote</h2>
-            <blockquote>
-                "Success is the sum of small efforts repeated day in and day out."
-                <cite>– Robert Collier</cite>
-            </blockquote>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Aryan Pathak. All rights reserved.</p>
-    </footer>
-
+  <script src="index.js"></script>
 </body>
 </html>
